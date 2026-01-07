@@ -229,7 +229,7 @@
         "nodeCredentialType": "googlePalmApi",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"instances\": [\n    {\n      \"prompt\": {{ JSON.stringify($json.video_prompt) }},\n      \"image\": {\n        \"mimeType\": \"image/png\",\n        \"data\": {{ JSON.stringify($json.avatar_binary) }}\n      },\n      \"endFrameImage\": {\n        \"mimeType\": \"image/png\",\n        \"data\": {{ JSON.stringify($json.product_binary) }}\n      }\n    }\n  ],\n  \"parameters\": {\n    \"aspectRatio\": \"16:9\",\n    \"negativePrompt\": \"cartoon, low quality, watermark\"\n  }\n}",
+        "jsonBody": "={\n  \"instances\": [\n    {\n      \"prompt\": {{ JSON.stringify($json.video_prompt) }},\n      \"image\": {\n        \"mimeType\": \"image/png\",\n        \"data\": {{ JSON.stringify($json.avatar_binary) }}\n      },\n      \"endImage\": {\n        \"mimeType\": \"image/png\",\n        \"data\": {{ JSON.stringify($json.product_binary) }}\n      }\n    }\n  ],\n  \"parameters\": {\n    \"aspectRatio\": \"16:9\",\n    \"negativePrompt\": \"cartoon, low quality, watermark\"\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
